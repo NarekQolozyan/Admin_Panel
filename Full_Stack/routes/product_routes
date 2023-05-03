@@ -1,0 +1,15 @@
+const action_products = require('../controllers/product_controller')
+
+exports.productsRoutes=(app)=>{
+        
+    app.get("/products",action_products.get_all)
+
+    app.get("/get_product/:id",action_products.get_byId)
+
+    app.post("/product_add",action_products.add_product)
+    
+    app.patch("/update_product/:id",action_products.edit_product)
+
+    app.delete("/delete_product/:id",action_products.delete_product)
+
+}

@@ -1,0 +1,37 @@
+.navbar-option{
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 3;
+    height: 50px;
+}
+.navbar-option h1:nth-child(1){
+    border-right: 1px solid #000;
+    text-align: center;
+}
+.navbar-option h1:nth-child(2){
+    text-align: center;
+}
+h1{
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    margin: 0;
+}
+.welcomeImg{
+    width: 50%;
+    height: 270px;
+    position: absolute;
+    top: 1px;
+    left: 28%;
+}
+.welcome-word{
+    position: absolute;
+    top: 230px;
+    left: 40%;
+    font-size: 60px;
+}
+.row{
+    display: flex;
+}
